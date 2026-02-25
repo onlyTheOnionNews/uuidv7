@@ -2,6 +2,7 @@
   "name": "@onlytheonionnews/uuidv7",
   "version": "1.0.0",
   "description": "A lightweight UUIDv7 generator and decoder with TypeScript support",
+  "private": false,
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -37,7 +38,7 @@
   "homepage": "https://github.com/onlyTheOnionNews/uuidv7#readme",
   "engines": {
     "node": ">=18.0.0"
-  },
+  },  
   "devDependencies": {
     "@swc-node/register": "^1.11.1",
     "@swc/core": "^1.15.13"
