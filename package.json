@@ -1,5 +1,28 @@
 {
-	"dependencies": {
-		"typedoc": "^0.28.5"
-	}
+  "name": "@eluktronics/uuidv7-workspace",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Nx workspace for UUIDv7 library",
+  "scripts": {
+    "build": "nx run-many -t build",
+    "lint": "nx run-many -t lint",
+    "version": "nx run-many -t version",
+    "release": "nx release",
+    "docs": "nx run uuidv7:docs"
+  },
+  "devDependencies": {
+    "@nx/js": "^20.0.0",
+    "@nx/workspace": "^20.0.0",
+    "nx": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typedoc": "^0.28.5",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "workspaces": [
+    "libs/*"
+  ],
+  "packageManager": "pnpm@9.0.0"
 }

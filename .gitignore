@@ -1,1 +1,38 @@
+# Dependencies
 node_modules
+.pnpm-store
+
+# Build outputs
+dist
+*.tsbuildinfo
+
+# Nx cache
+.nx
+.nx/cache
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Test coverage
+coverage
+
+# Temporary files
+tmp
+temp

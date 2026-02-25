@@ -1,0 +1,27 @@
+# Source files
+src/
+tsconfig.json
+project.json
+
+# Nx files
+.nx
+
+# IDE
+.idea
+.vscode
+
+# Test files
+*.test.ts
+*.spec.ts
+__tests__/
+
+# Documentation source
+docs/
+
+# Git
+.git
+.gitignore
+
+# Misc
+*.log
+.DS_Store

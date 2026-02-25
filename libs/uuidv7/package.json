@@ -1,0 +1,41 @@
+{
+  "name": "@eluktronics/uuidv7",
+  "version": "1.0.0",
+  "description": "A lightweight UUIDv7 generator and decoder with TypeScript support",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "uuid",
+    "uuidv7",
+    "uuid-v7",
+    "guid",
+    "identifier",
+    "timestamp",
+    "sortable",
+    "typescript"
+  ],
+  "author": "ELUKTRONICS",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ELUKTRONICS/uuidv7.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ELUKTRONICS/uuidv7/issues"
+  },
+  "homepage": "https://github.com/ELUKTRONICS/uuidv7#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

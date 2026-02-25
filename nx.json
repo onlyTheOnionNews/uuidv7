@@ -1,0 +1,51 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "production": [
+      "default",
+      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
+      "!{projectRoot}/tsconfig.spec.json",
+      "!{projectRoot}/jest.config.[jt]s",
+      "!{projectRoot}/.eslintrc.json"
+    ],
+    "sharedGlobals": []
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"],
+      "outputs": ["{projectRoot}/dist"],
+      "cache": true
+    },
+    "version": {
+      "dependsOn": ["build"],
+      "inputs": ["production", "^production"],
+      "outputs": ["{projectRoot}"],
+      "cache": false
+    },
+    "lint": {
+      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"],
+      "cache": true
+    }
+  },
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRegistry": "https://registry.npmjs.org"
+      }
+    }
+  },
+  "defaultBase": "main",
+  "useInferencePlugins": false,
+  "plugins": [
+    {
+      "plugin": "@nx/js",
+      "options": {
+        "build": {
+          "targetName": "build"
+        }
+      }
+    }
+  ]
+}
