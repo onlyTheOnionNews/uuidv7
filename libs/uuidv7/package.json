@@ -1,7 +1,7 @@
 {
-  "name": "@onlytheonionnews/uuidv7",
+  "name": "uuidv7-isomorphic",
   "version": "1.0.0",
-  "description": "A lightweight UUIDv7 generator and decoder with TypeScript support",
+  "description": "A lightweight UUIDv7 generator and decoder with TypeScript support built to run on server and client",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.mjs",

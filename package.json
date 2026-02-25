@@ -1,7 +1,7 @@
 {
   "name": "@onlytheonionnews/uuidv7-workspace",
   "version": "0.0.0",
-  "private": false,
+  "private": true,
   "description": "Nx workspace for UUIDv7 library",
   "scripts": {
     "build": "nx run-many -t build",
